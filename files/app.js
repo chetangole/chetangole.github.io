@@ -23,7 +23,7 @@ $(function() {
     $('[data-typer-targets]').typer();
 
     // DRIBBBLE
-    $.jribbble.getShotsByPlayerId('rafaelderolez', function(playerShots) {
+    /* $.jribbble.getShotsByPlayerId('rafaelderolez', function(playerShots) {
         var html = [];
         $.each(playerShots.shots, function(i, shot) {
             html.push('<article class="work__dribbble__shot">');
@@ -35,7 +35,7 @@ $(function() {
     }, {
         page: 1,
         per_page: 3
-    });
+    }); */
 
     // OVERLAY FADE
     var o = $(".top"),
