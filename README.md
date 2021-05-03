@@ -1,2 +1,1 @@
-chetangole.github.io
-====================
+visit chetangole.com to see the code in action
