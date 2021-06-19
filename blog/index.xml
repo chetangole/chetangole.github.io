@@ -8,33 +8,50 @@
       <url>https://chetangole.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://chetangole.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 19 Jun 2021 08:42:08 +0530</lastBuildDate><atom:link href="https://chetangole.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://chetangole.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Lambda, Cold Start and Java Optimizations</title>
       <link>https://chetangole.com/blog/java-aws-lambda-cold-start/</link>
-      <pubDate>Sat, 19 Jun 2021 08:42:08 +0530</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/java-aws-lambda-cold-start/</guid>
-      <description>If you are planning to write a AWS Lambda function in Java, this article will help you a lot.</description>
+      <description></description>
     </item>
     
     <item>
       <title>Cost Effective Test Automation for AWS Lambda based Serverless Projects</title>
       <link>https://chetangole.com/blog/cost-effective-test-automation-for-aws-lambda/</link>
-      <pubDate>Sat, 19 Jun 2021 08:42:08 +0530</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/cost-effective-test-automation-for-aws-lambda/</guid>
-      <description>How to do pre-production test automation of your AWS Lambda function in a cost effective way?</description>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrate Microsoft Teams with Robot Automation Framework</title>
+      <link>https://chetangole.com/blog/microsoft-teams-integration-with-robot-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chetangole.com/blog/microsoft-teams-integration-with-robot-framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Points to consider when using AWS Lambda</title>
+      <link>https://chetangole.com/blog/points-to-consider-when-using-aws-lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chetangole.com/blog/points-to-consider-when-using-aws-lambda/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>To be, or not to be: Code Comments</title>
       <link>https://chetangole.com/blog/code-comment-or-no-comment/</link>
-      <pubDate>Sat, 19 Jun 2021 08:42:08 +0530</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/code-comment-or-no-comment/</guid>
-      <description>Shall I write comments in my code?</description>
+      <description></description>
     </item>
     
   </channel>

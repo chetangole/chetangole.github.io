@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Chetan Gole</title>
-    <link>https://chetangole.com/</link>
-    <description>Recent content on Chetan Gole</description>
+    <title>Java on Chetan Gole</title>
+    <link>https://chetangole.com/tags/java/</link>
+    <description>Recent content in Java on Chetan Gole</description>
     <image>
       <url>https://chetangole.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://chetangole.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://chetangole.com/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://chetangole.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Lambda, Cold Start and Java Optimizations</title>
       <link>https://chetangole.com/blog/java-aws-lambda-cold-start/</link>
@@ -24,15 +24,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/cost-effective-test-automation-for-aws-lambda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Integrate Microsoft Teams with Robot Automation Framework</title>
-      <link>https://chetangole.com/blog/microsoft-teams-integration-with-robot-framework/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chetangole.com/blog/microsoft-teams-integration-with-robot-framework/</guid>
       <description></description>
     </item>
     
