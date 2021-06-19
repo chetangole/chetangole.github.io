@@ -130,12 +130,12 @@
 <figure class="entry-cover"><img loading="lazy" src="https://chetangole.com/images/aws_lambda_java.png" alt="">
 </figure>
   <header class="entry-header">
-    <h2>AWS Lambda, Cold Start and Java Optimizations</h2>
+    <h2>AWS Lambda, Cold Start and Java Optimizations<div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div></h2>
   </header>
   <section class="entry-content">
-    <p></p>
+    <p>Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes. Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid reflection....</p>
   </section>
-  <footer class="entry-footer">0 min&nbsp;·&nbsp;Chetan Gole</footer>
+  <footer class="entry-footer">1 min&nbsp;·&nbsp;Chetan Gole</footer>
   <a class="entry-link" aria-label="post link to AWS Lambda, Cold Start and Java Optimizations" href="https://chetangole.com/blog/java-aws-lambda-cold-start/"></a>
 </article>
 
@@ -143,12 +143,13 @@
 <figure class="entry-cover"><img loading="lazy" src="https://chetangole.com/images/aws_lambda_automation.png" alt="">
 </figure>
   <header class="entry-header">
-    <h2>Cost Effective Test Automation for AWS Lambda based Serverless Projects</h2>
+    <h2>Cost Effective Test Automation for AWS Lambda based Serverless Projects<div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div></h2>
   </header>
   <section class="entry-content">
-    <p></p>
+    <p>You can invoke your function locally by using the sam local invoke command and providing its function logical ID and an event file.
+https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-invoke.html</p>
   </section>
-  <footer class="entry-footer">0 min&nbsp;·&nbsp;Chetan Gole</footer>
+  <footer class="entry-footer">1 min&nbsp;·&nbsp;Chetan Gole</footer>
   <a class="entry-link" aria-label="post link to Cost Effective Test Automation for AWS Lambda based Serverless Projects" href="https://chetangole.com/blog/cost-effective-test-automation-for-aws-lambda/"></a>
 </article>
 
@@ -156,12 +157,12 @@
 <figure class="entry-cover"><img loading="lazy" src="https://chetangole.com/images/aws_lambda.png" alt="">
 </figure>
   <header class="entry-header">
-    <h2>Points to consider when using AWS Lambda</h2>
+    <h2>Points to consider when using AWS Lambda<div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div></h2>
   </header>
   <section class="entry-content">
-    <p></p>
+    <p>Cold Start Burst Limitations – concurrency (next slide) Time, Memory and CPU limitations  Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.   Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System) Not recommended to use libraries like Spring, mkt-shared etc. No APIs for IoC, Localization, interaction with config service, and so on....</p>
   </section>
-  <footer class="entry-footer">0 min&nbsp;·&nbsp;Chetan Gole</footer>
+  <footer class="entry-footer">1 min&nbsp;·&nbsp;Chetan Gole</footer>
   <a class="entry-link" aria-label="post link to Points to consider when using AWS Lambda" href="https://chetangole.com/blog/points-to-consider-when-using-aws-lambda/"></a>
 </article>
     </main>

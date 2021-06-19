@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Points to consider when using AWS Lambda | Chetan Gole</title>
 <meta name="keywords" content="Java, Coding" />
-<meta name="description" content="Points to consider when using AWS Lambda - Chetan Gole">
+<meta name="description" content="Cold Start Burst Limitations – concurrency (next slide) Time, Memory and CPU limitations  Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.   Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System) Not recommended to use libraries like Spring, mkt-shared etc. No APIs for IoC, Localization, interaction with config service, and so on.">
 <meta name="author" content="Chetan Gole">
 <link rel="canonical" href="https://chetangole.com/blog/points-to-consider-when-using-aws-lambda/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
@@ -23,7 +23,7 @@
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.83.1" />
 <meta property="og:title" content="Points to consider when using AWS Lambda" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Cold Start Burst Limitations – concurrency (next slide) Time, Memory and CPU limitations  Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.   Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System) Not recommended to use libraries like Spring, mkt-shared etc. No APIs for IoC, Localization, interaction with config service, and so on." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chetangole.com/blog/points-to-consider-when-using-aws-lambda/" />
 <meta property="og:image" content="https://chetangole.com/images/aws_lambda.png" /><meta property="article:section" content="blog" />
@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://chetangole.com/images/aws_lambda.png" />
 <meta name="twitter:title" content="Points to consider when using AWS Lambda"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Cold Start Burst Limitations – concurrency (next slide) Time, Memory and CPU limitations  Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.   Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System) Not recommended to use libraries like Spring, mkt-shared etc. No APIs for IoC, Localization, interaction with config service, and so on."/>
 
 
 <script type="application/ld+json">
@@ -62,12 +62,12 @@
   "@type": "BlogPosting",
   "headline": "Points to consider when using AWS Lambda",
   "name": "Points to consider when using AWS Lambda",
-  "description": "",
+  "description": "Cold Start Burst Limitations – concurrency (next slide) Time, Memory and CPU limitations  Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.   Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System) Not recommended to use libraries like Spring, mkt-shared etc. No APIs for IoC, Localization, interaction with config service, and so on.",
   "keywords": [
     "Java", "Coding"
   ],
-  "articleBody": "",
-  "wordCount" : "0",
+  "articleBody": " Cold Start Burst Limitations – concurrency (next slide) Time, Memory and CPU limitations  Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.   Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System) Not recommended to use libraries like Spring, mkt-shared etc. No APIs for IoC, Localization, interaction with config service, and so on. Bad coding practice is getting followed as we do not have such libraries. Flip side, people understand how to write good code.  ",
+  "wordCount" : "91",
   "inLanguage": "en",
   "image":"https://chetangole.com/images/aws_lambda.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -184,15 +184,28 @@
   <header class="post-header">
     
     <h1 class="post-title">
-      Points to consider when using AWS Lambda
+      Points to consider when using AWS Lambda<div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div>
     </h1>
-    <div class="post-meta">0 min&nbsp;·&nbsp;Chetan Gole&nbsp;|&nbsp;<a href="https://github.com/chetangole/chetangole.github.io/content/blog/points-to-consider-when-using-aws-lambda.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta">1 min&nbsp;·&nbsp;Chetan Gole
 </div>
   </header> 
 <figure class="entry-cover"><img loading="lazy" src="https://chetangole.com/images/aws_lambda.png" alt="">
         
 </figure>
-  <div class="post-content">
+  <div class="post-content"><ul>
+<li><a href="/blog/java-aws-lambda-cold-start/">Cold Start</a></li>
+<li>Burst Limitations – concurrency (next slide)</li>
+<li>Time, Memory and CPU limitations
+<ul>
+<li>Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.</li>
+</ul>
+</li>
+<li>Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System)</li>
+<li>Not recommended to use libraries like Spring, mkt-shared etc.</li>
+<li>No APIs for IoC, Localization, interaction with config service, and so on.</li>
+<li>Bad coding practice is getting followed as we do not have such libraries. Flip side, people understand how to write good code.</li>
+</ul>
+
 
   </div>
   <footer class="post-footer">

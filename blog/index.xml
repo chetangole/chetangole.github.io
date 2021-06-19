@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/java-aws-lambda-cold-start/</guid>
-      <description></description>
+      <description>Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes. Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid reflection.</description>
     </item>
     
     <item>
@@ -24,7 +24,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/cost-effective-test-automation-for-aws-lambda/</guid>
-      <description></description>
+      <description>You can invoke your function locally by using the sam local invoke command and providing its function logical ID and an event file.
+https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-invoke.html</description>
     </item>
     
     <item>
@@ -33,7 +34,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/microsoft-teams-integration-with-robot-framework/</guid>
-      <description></description>
+      <description>Use Robot Framework Listener for Microsoft Teams:
+https://github.com/chetangole/robot-framework-listener-ms-teams</description>
     </item>
     
     <item>
@@ -42,7 +44,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/points-to-consider-when-using-aws-lambda/</guid>
-      <description></description>
+      <description>Cold Start Burst Limitations – concurrency (next slide) Time, Memory and CPU limitations  Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.   Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System) Not recommended to use libraries like Spring, mkt-shared etc. No APIs for IoC, Localization, interaction with config service, and so on.</description>
     </item>
     
     <item>
@@ -51,7 +53,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/code-comment-or-no-comment/</guid>
-      <description></description>
+      <description>There are a lot of good discussions around whether we should add comments in our code or not. Please go through below links to read more:
+https://blog.codinghorror.com/coding-without-comments/ https://softwareengineering.stackexchange.com/questions/1/comments-are-a-code-smell</description>
     </item>
     
   </channel>
