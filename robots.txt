@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /myresume.pdf
-Disallow: /resume.doc
-Disallow: /connect.zip
