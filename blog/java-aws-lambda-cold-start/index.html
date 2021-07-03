@@ -7,7 +7,8 @@
 <meta name="robots" content="index, follow">
 <title>AWS Lambda, Cold Start and Java Optimizations | Chetan Gole</title>
 <meta name="keywords" content="Java, Coding" />
-<meta name="description" content="Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes. Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid reflection.">
+<meta name="description" content="In one of my recent project I got an opportunity to work on a Java based Lambda function. Here I am sharing few tips to reduce the cost and solution to the common AWS Lambda problems like Cold start.
+ Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes.">
 <meta name="author" content="Chetan Gole">
 <link rel="canonical" href="https://chetangole.com/blog/java-aws-lambda-cold-start/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
@@ -23,7 +24,8 @@
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.83.1" />
 <meta property="og:title" content="AWS Lambda, Cold Start and Java Optimizations" />
-<meta property="og:description" content="Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes. Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid reflection." />
+<meta property="og:description" content="In one of my recent project I got an opportunity to work on a Java based Lambda function. Here I am sharing few tips to reduce the cost and solution to the common AWS Lambda problems like Cold start.
+ Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chetangole.com/blog/java-aws-lambda-cold-start/" />
 <meta property="og:image" content="https://chetangole.com/images/aws_lambda_java.png" /><meta property="article:section" content="blog" />
@@ -33,7 +35,8 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://chetangole.com/images/aws_lambda_java.png" />
 <meta name="twitter:title" content="AWS Lambda, Cold Start and Java Optimizations"/>
-<meta name="twitter:description" content="Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes. Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid reflection."/>
+<meta name="twitter:description" content="In one of my recent project I got an opportunity to work on a Java based Lambda function. Here I am sharing few tips to reduce the cost and solution to the common AWS Lambda problems like Cold start.
+ Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes."/>
 
 
 <script type="application/ld+json">
@@ -62,12 +65,12 @@
   "@type": "BlogPosting",
   "headline": "AWS Lambda, Cold Start and Java Optimizations",
   "name": "AWS Lambda, Cold Start and Java Optimizations",
-  "description": "Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes. Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid reflection.",
+  "description": "In one of my recent project I got an opportunity to work on a Java based Lambda function. Here I am sharing few tips to reduce the cost and solution to the common AWS Lambda problems like Cold start.\n Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes.",
   "keywords": [
     "Java", "Coding"
   ],
-  "articleBody": " Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes. Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid reflection. You get 2 core CPU after 1.8 GB memory – use Java concurrency with higher memory configuration Use event driven architecture whenever possible  ",
-  "wordCount" : "90",
+  "articleBody": "In one of my recent project I got an opportunity to work on a Java based Lambda function. Here I am sharing few tips to reduce the cost and solution to the common AWS Lambda problems like Cold start.\n Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes. Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid using any type of extra jar for small support, instead build them (for example avoid using Spring only for dependency injection). Avoid reflection. You get 2 core CPU after 1.8 GB memory – use Java concurrency with higher memory configuration to achieve true parallelism. Use event driven architecture whenever possible Use latest Java version (like Java 11 LTS) which has Modules support to reduce the size of deployable application, async HTTP client, and other performance fixes.  ",
+  "wordCount" : "181",
   "inLanguage": "en",
   "image":"https://chetangole.com/images/aws_lambda_java.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -192,7 +195,8 @@
 <figure class="entry-cover"><img loading="lazy" src="https://chetangole.com/images/aws_lambda_java.png" alt="">
         
 </figure>
-  <div class="post-content"><ul>
+  <div class="post-content"><p>In one of my recent project I got an opportunity to work on a Java based Lambda function. Here I am sharing few tips to reduce the cost and solution to the common AWS Lambda problems like Cold start.</p>
+<ul>
 <li>Keep them warm!
 <ul>
 <li>Use provisioned concurrency – AWS feature.</li>
@@ -201,13 +205,12 @@
 </li>
 <li>Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit</li>
 <li>Keep JAR size as small as possible, avoid including unnecessary jars and classes.</li>
-<li>Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function.</li>
+<li>Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid using any type of extra jar for small support, instead build them (for example avoid using Spring only for dependency injection).</li>
 <li>Avoid reflection.</li>
-<li>You get 2 core CPU after 1.8 GB memory – use Java concurrency with higher memory configuration</li>
-<li>Use event driven architecture whenever possible</li>
+<li>You get 2 core CPU after 1.8 GB memory – use Java concurrency with higher memory configuration to achieve true parallelism.</li>
+<li>Use <a href="https://aws.amazon.com/event-driven-architecture/">event driven architecture</a> whenever possible</li>
+<li>Use latest Java version (like Java 11 LTS) which has Modules support to reduce the size of deployable application, async HTTP client, and other performance fixes.</li>
 </ul>
-<p><img loading="lazy" src="/images/aws_lambda_lifecycle.jpg#center" alt="AWS Lambda Lifecycle "  />
-</p>
 
 
   </div>

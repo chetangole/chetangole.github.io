@@ -15,8 +15,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/code-comment-or-no-comment/</guid>
-      <description>There are a lot of good discussions around whether we should add comments in our code or not. Please go through below links to read more:
-https://blog.codinghorror.com/coding-without-comments/ https://softwareengineering.stackexchange.com/questions/1/comments-are-a-code-smell</description>
+      <description>I believe in writing code such a way that, you don&amp;rsquo;t need to provide the documentation with your source code. Naming the functions, variables and even logs can help understand the source code instead of writing long confusing comments. However sometimes the comments also help.
+There are a lot of good discussions around whether we should add comments in our code or not. Please go through below links to read more:</description>
     </item>
     
   </channel>

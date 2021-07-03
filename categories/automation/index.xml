@@ -15,8 +15,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/microsoft-teams-integration-with-robot-framework/</guid>
-      <description>Use Robot Framework Listener for Microsoft Teams:
-https://github.com/chetangole/robot-framework-listener-ms-teams</description>
+      <description>I have created a Robot Framework listener for Microsoft Teams, the source code is available here:
+https://github.com/chetangole/robot-framework-listener-ms-teams
+Feel free to use and provide feedback.</description>
     </item>
     
   </channel>

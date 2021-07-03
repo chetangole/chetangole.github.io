@@ -15,7 +15,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/java-aws-lambda-cold-start/</guid>
-      <description>Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes. Use libraries which are optimized for serverless for example micronaut.io, Spring Cloud Function. Avoid reflection.</description>
+      <description>In one of my recent project I got an opportunity to work on a Java based Lambda function. Here I am sharing few tips to reduce the cost and solution to the common AWS Lambda problems like Cold start.
+ Keep them warm!  Use provisioned concurrency – AWS feature. Use Periodic ping e.g., health checks!   Load as much as you can/need during runtime bootstrap since you get boosted CPU access during that time but mind the 10 second limit Keep JAR size as small as possible, avoid including unnecessary jars and classes.</description>
     </item>
     
     <item>
@@ -24,8 +25,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/cost-effective-test-automation-for-aws-lambda/</guid>
-      <description>You can invoke your function locally by using the sam local invoke command and providing its function logical ID and an event file.
-https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-invoke.html</description>
+      <description>You can invoke your Lambda function locally by using the sam local invoke command and providing its function logical ID and an event file. We have built a framework using AWS SAM SDK and Pytest to test our Lambda functions before every production deployment. The tests are run inside the Jenkins server itself. No dependency on real AWS account.
+Read more here: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-invoke.html
+I&amp;rsquo;ll update the post with more information very soon.</description>
     </item>
     
     <item>
@@ -34,7 +36,7 @@ https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/points-to-consider-when-using-aws-lambda/</guid>
-      <description>Cold Start Burst Limitations – concurrency (next slide) Time, Memory and CPU limitations  Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.   Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System) Not recommended to use libraries like Spring, mkt-shared etc. No APIs for IoC, Localization, interaction with config service, and so on.</description>
+      <description>Cold Start AWS Lambda: Burst Limitations – concurrency. Time, Memory and CPU limitations  Only time and memory is configurable. AWS Allocates other resources like CPU, networking throughput based on selected memory configuration.   Temp storage limitations – 512 MB (If need be, we can mount AWS Elastic File System) Not recommended to use libraries like Spring, Hibernate, etc. No APIs for IoC, Localization, interaction with shared services, and so on.</description>
     </item>
     
     <item>
@@ -43,8 +45,8 @@ https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/code-comment-or-no-comment/</guid>
-      <description>There are a lot of good discussions around whether we should add comments in our code or not. Please go through below links to read more:
-https://blog.codinghorror.com/coding-without-comments/ https://softwareengineering.stackexchange.com/questions/1/comments-are-a-code-smell</description>
+      <description>I believe in writing code such a way that, you don&amp;rsquo;t need to provide the documentation with your source code. Naming the functions, variables and even logs can help understand the source code instead of writing long confusing comments. However sometimes the comments also help.
+There are a lot of good discussions around whether we should add comments in our code or not. Please go through below links to read more:</description>
     </item>
     
   </channel>
