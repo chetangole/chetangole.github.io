@@ -20,6 +20,16 @@
     </item>
     
     <item>
+      <title>Change Current Java Version in Windows 10 in one click - using a batch file</title>
+      <link>https://chetangole.com/blog/change-current-java-version-in-window-using-command/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chetangole.com/blog/change-current-java-version-in-window-using-command/</guid>
+      <description>In the world of microservices, we work on different versions of Java in different microservices. It takes some effort to open the Windows configuration screen to change the Java version and run your builds. Manually doing it once in a while is ok, but what if you want to do it when you have a production defect in hand?
+I found an opportunity to automate this. So I created this simple batch file to change the Java version with one click.</description>
+    </item>
+    
+    <item>
       <title>Cost Effective Test Automation for AWS Lambda based Serverless Projects</title>
       <link>https://chetangole.com/blog/cost-effective-test-automation-for-aws-lambda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -45,7 +55,7 @@ I&amp;rsquo;ll update the post with more information very soon.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chetangole.com/blog/code-comment-or-no-comment/</guid>
-      <description>I believe in writing code such a way that, you don&amp;rsquo;t need to provide the documentation with your source code. Naming the functions, variables and even logs can help understand the source code instead of writing long confusing comments. However sometimes the comments also help.
+      <description>I believe in writing code such a way that, you don&amp;rsquo;t need to provide the documentation with your source code to understand how it works. Naming the functions, variables and even logs can help understand the source code flow instead of writing long confusing comments. However sometimes the comments also help.
 There are a lot of good discussions around whether we should add comments in our code or not. Please go through below links to read more:</description>
     </item>
     
