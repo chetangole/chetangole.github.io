@@ -41,6 +41,17 @@ I&amp;rsquo;ll update the post with more information very soon.</description>
     </item>
     
     <item>
+      <title>How Datadog Agent Works</title>
+      <link>https://chetangole.com/blog/how-datadog-agent-works-java-agents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chetangole.com/blog/how-datadog-agent-works-java-agents/</guid>
+      <description>I am sure, you must be aware of Datadog. Datadog is infrastructure monitoring as a service. Read more here: datadog.com
+Ever wondered how Datadog agent works? We use Datadog in SAS CI360 to monitor our infrastructure. It provides quite a lot of features like APN, distributed tracing, etc.
+But, how Datadog knows all the information about your service without adding any code to our microservices? We need to include a Datadog agent in our JVM startup.</description>
+    </item>
+    
+    <item>
       <title>Points to consider when using AWS Lambda</title>
       <link>https://chetangole.com/blog/points-to-consider-when-using-aws-lambda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
